@@ -6,10 +6,11 @@
 
 ;;; Code:
 
-(setq comp-speed 2)  ; native compilation optimization level
-(setq gc-cons-threshold 250000000)  ; reduce garbage collection frequency, every 250mb
+(setq comp-speed 2)                            ; native compilation optimization level
+(setq gc-cons-threshold 250000000)             ; reduce garbage collection frequency, every 250mb
 (setq large-file-warning-threshold 100000000)  ; warn when opening big files
-(setq default-directory "~/src")  ; use custom default directory
+(setq default-directory "~/src")               ; use custom default directory
+(setq whitespace-line-column 100)              ; use 100 char lines as the norm
 
 (require 'package)
 
