@@ -2,7 +2,10 @@
 
 ;;; Commentary:
 
-;; This file will configure and customize Emacs just the way I want it
+;; This file will configure and customize Emacs just the way I want it, aiming
+;; to be more or less minimal and functional.
+;; I got a lot of inspiration from Prelude, which I've used for several years now
+;; but decided to kick the and start from scratch.
 
 ;;; License:
 
