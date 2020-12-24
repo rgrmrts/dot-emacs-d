@@ -1,2 +1,26 @@
-# dot-emacs-d
-My custom, from scratch, artisanal Emacs configuration
+# `.emacs.d` :memo:
+
+Custom Emacs configuration. I'm currently using Emacs 28.x with the native compilation branch on macOS Big Sur.
+
+# Getting Started
+
+Install Emacs:
+
+```shell
+$ brew tap d12frosted/emacs-plus
+$ brew install emacs-plus@28 --with-native-comp --with-xwidgets
+```
+
+NOTE: at the time of writing, `gcc` and `libgccjit` need to be re-installed to get native compilation to work.
+
+```shell
+$ brew reinstall gcc libgccjit
+```
+
+Check out this repository to either `~/.emacs.d` and start emacs as usual or somewhere else and start emacs from within this directly, pointing to `init.el`.
+
+```shell
+$ git clone git@github.com:rgrmrts/dot-emacs-d.git
+$ cd dot-emacs-d
+$ emacs -q --load init.el
+```
