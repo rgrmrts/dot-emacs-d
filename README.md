@@ -1,5 +1,7 @@
 # :memo: `.emacs.d`
 
+<image here>
+  
 Custom Emacs configuration. I'm currently using Emacs 28.x with the native compilation branch on macOS Big Sur.
 
 ## Getting Started
