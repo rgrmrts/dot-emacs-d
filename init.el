@@ -58,7 +58,7 @@
 
 (require 'use-package)
 
-;; load all the custom packages, ui tweaks etc.
+;; load all the custom packages, ui tweaks, language configurations etc.
 (require 'custom-packages)
 (require 'custom-interface)
 (require 'custom-languages)

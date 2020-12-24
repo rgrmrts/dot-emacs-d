@@ -1,8 +1,8 @@
-# `.emacs.d` :memo:
+# :memo: `.emacs.d`
 
 Custom Emacs configuration. I'm currently using Emacs 28.x with the native compilation branch on macOS Big Sur.
 
-# Getting Started
+## Getting Started
 
 Install Emacs:
 
