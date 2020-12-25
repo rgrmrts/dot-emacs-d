@@ -54,6 +54,7 @@
     nlinum-relative
     ag
     helm
+    helm-ag
     helm-projectile
     ivy
     projectile
