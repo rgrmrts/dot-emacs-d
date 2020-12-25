@@ -30,6 +30,10 @@
 
 ;;; Code:
 
+;; (require 'helm-projectile)
+(require 'helm-projectile)
+(helm-projectile-on)
+
 ;; set mac command and option keys
 (setq mac-command-modifier 'meta)
 (setq mac-option-modifier 'super)
@@ -44,8 +48,8 @@
 (global-set-key (kbd "C--") 'undo)
 (global-set-key (kbd "C-=") 'undo-redo)
 (global-set-key (kbd "C-s") 'swiper)
-;; (global-set-key (kbd "C-c p p") 'helm-projectile-switch-project)
-;; (global-set-key (kbd "C-c p f") 'helm-projectile-find-file)
+(global-set-key (kbd "C-c p p") 'helm-projectile-switch-project)
+(global-set-key (kbd "C-c p f") 'helm-projectile-find-file)
 
 (provide 'keybindings)
 ;;; keybindings.el ends here
