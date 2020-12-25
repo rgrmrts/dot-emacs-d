@@ -34,7 +34,7 @@
 ;;; Code:
 
 ;; some top level config for emacs
-(setq comp-speed 2)                            ; native compilation optimization level
+(setq comp-speed 3)                            ; native compilation optimization level
 (setq gc-cons-threshold 250000000)             ; reduce garbage collection frequency, every 250mb
 (setq large-file-warning-threshold 100000000)  ; warn when opening big files
 (setq default-directory "~/src/")               ; use custom default directory
@@ -45,8 +45,8 @@
 (add-to-list 'load-path "~/src/dot-emacs-d/custom")
 
 ;; load all the custom packages, ui tweaks, language configurations etc.
-(require 'keybindings)
 (require 'packages)
+(require 'keybindings)
 (require 'interface)
 (require 'languages)
 
