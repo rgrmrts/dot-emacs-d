@@ -33,35 +33,22 @@
 
 ;;; Code:
 
+;; some top level config for emacs
 (setq comp-speed 2)                            ; native compilation optimization level
 (setq gc-cons-threshold 250000000)             ; reduce garbage collection frequency, every 250mb
 (setq large-file-warning-threshold 100000000)  ; warn when opening big files
-(setq default-directory "~/src")               ; use custom default directory
+(setq default-directory "~/src/")               ; use custom default directory
 (setq whitespace-line-column 100)              ; use 100 char lines as the norm
 
-(require 'package)
-
-;; use melpa and elpa to install packages
-(setq package-archives '(("melpa" . "https://melpa.org/packages/")
-                         ("elpa" . "https://elpa.gnu.org/packages/")))
-
-;; initialize the internal record of packages
-(package-initialize)
-
-;; update the packages list if it's empty
-(unless package-archive-contents
-  (package-refresh-contents))
-
-;; install use-package
-(unless (package-installed-p 'use-package)
-  (package-install 'use-package))
-
-(require 'use-package)
+;; set the path where these configs live
+(add-to-list 'load-path "~/src/dot-emacs-d")
+(add-to-list 'load-path "~/src/dot-emacs-d/custom")
 
 ;; load all the custom packages, ui tweaks, language configurations etc.
-(require 'custom-packages)
-(require 'custom-interface)
-(require 'custom-languages)
+(require 'keybindings)
+(require 'packages)
+(require 'interface)
+(require 'languages)
 
 (provide 'init)
 ;;; init.el ends here
