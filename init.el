@@ -37,11 +37,11 @@
 (setenv "LIBRARY_PATH" "/usr/local/opt/gcc/lib/gcc/10:/usr/local/opt/libgccjit/lib/gcc/10:/usr/local/opt/gcc/lib/gcc/10/gcc/x86_64-apple-darwin20/10.2.0")
 
 ;; some top level config for emacs
-(setq comp-speed 3)                            ; native compilation optimization level
-(setq gc-cons-threshold 250000000)             ; reduce garbage collection frequency, every 250mb
-(setq large-file-warning-threshold 100000000)  ; warn when opening big files
-(setq default-directory "~/src/")               ; use custom default directory
-(setq whitespace-line-column 100)              ; use 100 char lines as the norm
+(setq comp-speed 3)                          ; native compilation optimization level
+(setq gc-cons-threshold 250000000)           ; reduce garbage collection frequency, every 250mb
+(setq large-file-warning-threshold 1000000)  ; warn when opening big files
+(setq default-directory "~/src/")            ; use custom default directory
+(setq whitespace-line-column 100)            ; use 100 char lines as the norm
 
 ;; set the path where these configs live
 (add-to-list 'load-path "~/src/dot-emacs-d")
