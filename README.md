@@ -26,3 +26,9 @@ $ git clone git@github.com:rgrmrts/dot-emacs-d.git
 $ cd dot-emacs-d
 $ emacs -q --load init.el
 ```
+
+Alternatively, I keep my config under `~/src/dot-emacs-d`, so I've symlinked my `init.el` file:
+
+```shell
+$ ln -s ~/src/dot-emacs-d/init.el ~/.emacs.d/init.el
+```
