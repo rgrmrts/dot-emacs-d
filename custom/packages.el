@@ -53,6 +53,7 @@
     nlinum
     nlinum-relative
     ag
+    all-the-icons
     helm
     helm-ag
     helm-projectile
