@@ -50,7 +50,9 @@
 
 ;; set theme to doom-solarized-light
 (load-theme 'doom-solarized-light t)
-;; use doom modeline
+
+;; use doom modeline this requires all-the-icons, which is installed under packages.el,
+;; but it's still required to run (all-the-icons-install-fonts)
 (doom-modeline-mode 1)
 
 (provide 'interface)
