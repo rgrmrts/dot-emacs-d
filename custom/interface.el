@@ -62,6 +62,7 @@
 
 ;; use ivy as completion engine
 (ivy-mode 1)
+(setq ivy-height 17)
 (all-the-icons-ivy-rich-mode 1)
 (ivy-rich-mode 1)
 (setcdr (assq t ivy-format-functions-alist) #'ivy-format-function-line)
