@@ -58,9 +58,10 @@
 
 ;; use doom modeline this requires all-the-icons, which is installed under packages.el,
 ;; but it's still required to run (all-the-icons-install-fonts)
+;; TODO: auto-run (all-the-icons-install-fonts) in packages.el maybe?
 (doom-modeline-mode 1)
 
-;; use ivy as completion engine
+;; use ivy as completion engine, and configure all ivy related stuff
 (ivy-mode 1)
 (setq ivy-height 17)
 (all-the-icons-ivy-rich-mode 1)
@@ -69,11 +70,16 @@
 (setq ivy-use-virtual-buffers t)
 (setq enable-recursive-minibuffers t)
 
-;; use counsel projectile mode for project switcing etc
+;; use counsel and projectile modes for project switcing etc
 (counsel-mode)
 (counsel-projectile-mode)
 
+;; not sure what this is for, but has something to do with an error on macOS
+;; TODO: document this better :)
 (setq dired-use-ls-dired nil)
+
+;; use counsel-esh-history to get command history in eshell
+(add-hook 'eshell-mode-hook (lambda () (global-set-key (kbd "C-c C-l") 'counsel-esh-history)))
 
 (provide 'interface)
 ;;; interface.el ends here
