@@ -49,5 +49,10 @@
 (global-set-key (kbd "C-s") 'swiper)
 (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 
+(add-hook 'eshell-hist-mode-hook
+	  (lambda ()
+	    (substitute-key-definition 'eshell-list-history 'counsel-esh-history eshell-hist-mode-map)))
+	    ;; (define-key eshell-mode-map (kbd "C-c C-l") 'counsel-esh-history)))
+
 (provide 'keybindings)
 ;;; keybindings.el ends here

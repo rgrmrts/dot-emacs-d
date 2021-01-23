@@ -78,8 +78,5 @@
 ;; TODO: document this better :)
 (setq dired-use-ls-dired nil)
 
-;; use counsel-esh-history to get command history in eshell
-(add-hook 'eshell-mode-hook (lambda () (global-set-key (kbd "C-c C-l") 'counsel-esh-history)))
-
 (provide 'interface)
 ;;; interface.el ends here
