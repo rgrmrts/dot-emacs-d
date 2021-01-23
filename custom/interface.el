@@ -54,7 +54,7 @@
       scroll-preserve-screen-position 1)
 
 ;; set theme to doom-solarized-light
-(load-theme 'doom-solarized-light t)
+(load-theme 'doom-flatwhite t)
 
 ;; use doom modeline this requires all-the-icons, which is installed under packages.el,
 ;; but it's still required to run (all-the-icons-install-fonts)
@@ -69,6 +69,7 @@
 (setq enable-recursive-minibuffers t)
 
 ;; use counsel projectile mode for project switcing etc
+(counsel-mode)
 (counsel-projectile-mode)
 
 (setq dired-use-ls-dired nil)

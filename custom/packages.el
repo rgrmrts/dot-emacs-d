@@ -62,6 +62,7 @@
     nlinum
     nlinum-relative
     projectile
+    rust-mode
     swiper
     use-package))
 

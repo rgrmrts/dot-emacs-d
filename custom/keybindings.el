@@ -43,6 +43,8 @@
 (global-unset-key (kbd "C-x C-f"))
 (global-set-key (kbd "C-x C-f") 'counsel-find-file)
 (global-set-key (kbd "M-x") 'counsel-M-x)
+(global-set-key (kbd "C-x C-b") 'counsel-switch-buffer)
+(global-set-key (kbd "C-c C-l") 'counsel-esh-history)
 (global-set-key (kbd "C--") 'undo)
 (global-set-key (kbd "C-=") 'undo-redo)
 (global-set-key (kbd "C-s") 'swiper)
