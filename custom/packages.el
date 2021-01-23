@@ -60,11 +60,14 @@
     ivy
     ivy-rich
     magit
+    markdown-mode
     nlinum
     nlinum-relative
     projectile
+    python-mode
     rust-mode
     swiper
+    toml-mode
     use-package))
 
 (defun ensure-all-packages-are-installed (list)
@@ -78,6 +81,9 @@
 (ensure-all-packages-are-installed packages)
 
 ;; configure shell after installing exec-path-from-shell
+;; this can potentially be moved into a separate package
+;; that configures eshell, but I don't really have a lot
+;; config for eshell right now
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize))
 
