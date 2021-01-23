@@ -48,22 +48,23 @@
 
 ;; this is the list of packages we're installing
 (defvar packages
-  '(doom-modeline
-    doom-themes
-    nlinum
-    nlinum-relative
-    ag
+  '(ag
     all-the-icons
-    helm
-    helm-ag
-    helm-projectile
-    ivy
-    projectile
-    use-package
+    all-the-icons-ivy-rich
+    counsel
+    counsel-projectile
+    doom-modeline
+    doom-themes
     flycheck
     flycheck-inline
+    ivy
+    ivy-rich
+    magit
+    nlinum
+    nlinum-relative
+    projectile
     swiper
-    magit))
+    use-package))
 
 (defun check-or-install (package)
   "Install a PACKAGE unless it's already installed."

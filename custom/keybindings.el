@@ -30,9 +30,7 @@
 
 ;;; Code:
 
-;; (require 'helm-projectile)
-;; (require 'helm-projectile)
-;; (helm-projectile-on)
+(require 'projectile)
 
 ;; set mac command and option keys
 (setq mac-command-modifier 'meta)
@@ -40,16 +38,15 @@
 
 ;; specific and custom key-bindings are all defined here
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
-;; (global-set-key (kbd "M-x") 'helm-M-x)
-;; (global-set-key (kbd "C-x b") 'helm-mini)
-;; (global-set-key (kbd "C-x C-b") 'helm-buffers-list)
-;; (global-set-key (kbd "C-x C-f") 'helm-find-files)
-;; (global-set-key (kbd "M-y") 'helm-show-kill-ring)
+(global-unset-key (kbd "C-x C-c"))
+(global-set-key (kbd "C-x C-c C-x C-c C-x C-c") 'save-buffers-kill-emacs)
+(global-unset-key (kbd "C-x C-f"))
+(global-set-key (kbd "C-x C-f") 'counsel-find-file)
+(global-set-key (kbd "M-x") 'counsel-M-x)
 (global-set-key (kbd "C--") 'undo)
 (global-set-key (kbd "C-=") 'undo-redo)
 (global-set-key (kbd "C-s") 'swiper)
-;; (global-set-key (kbd "C-c p p") 'helm-projectile-switch-project)
-;; (global-set-key (kbd "C-c p f") 'helm-projectile-find-file)
+(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 
 (provide 'keybindings)
 ;;; keybindings.el ends here

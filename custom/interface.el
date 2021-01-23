@@ -32,6 +32,11 @@
 
 ;;; Code:
 
+(require 'ivy)
+(require 'ivy-rich)
+(require 'all-the-icons-ivy-rich)
+(require 'counsel-projectile)
+
 ;; set font to use with Emacs
 (set-frame-font "JetBrains Mono 13" nil t)
 
@@ -54,6 +59,17 @@
 ;; use doom modeline this requires all-the-icons, which is installed under packages.el,
 ;; but it's still required to run (all-the-icons-install-fonts)
 (doom-modeline-mode 1)
+
+;; use ivy as completion engine
+(ivy-mode 1)
+(all-the-icons-ivy-rich-mode 1)
+(ivy-rich-mode 1)
+(setcdr (assq t ivy-format-functions-alist) #'ivy-format-function-line)
+(setq ivy-use-virtual-buffers t)
+(setq enable-recursive-minibuffers t)
+
+;; use counsel projectile mode for project switcing etc
+(counsel-projectile-mode)
 
 (provide 'interface)
 ;;; interface.el ends here
