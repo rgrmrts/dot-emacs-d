@@ -32,3 +32,9 @@ Alternatively, I keep my config under `~/src/dot-emacs-d`, so I've symlinked my 
 ```shell
 $ ln -s ~/src/dot-emacs-d/init.el ~/.emacs.d/init.el
 ```
+
+## License
+
+[MIT License](LICENSE)
+
+Copyright (c) 2020 rgrmrts
