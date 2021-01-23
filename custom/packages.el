@@ -33,7 +33,6 @@
 ;;; Code:
 
 (require 'package)
-(require 'cl-extra)
 
 ;; use melpa and elpa to install packages
 (setq package-archives '(("melpa" . "https://melpa.org/packages/")
@@ -66,14 +65,11 @@
     swiper
     use-package))
 
-(defun check-or-install (package)
-  "Install a PACKAGE unless it's already installed."
-  (unless (package-installed-p package)
-    (package-install package)))
-
 (defun ensure-all-packages-are-installed (list)
   "Ensures all packages in LIST are installed."
-  (cl-every #'check-or-install list))
+  (dolist (package list)
+    (unless (package-installed-p package)
+      (package-install package))))
 
 ;; runs every time we restart Emacs (which shouldn't be an issue if running
 ;; on boot and using emacsclient)

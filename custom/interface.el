@@ -71,5 +71,7 @@
 ;; use counsel projectile mode for project switcing etc
 (counsel-projectile-mode)
 
+(setq dired-use-ls-dired nil)
+
 (provide 'interface)
 ;;; interface.el ends here
