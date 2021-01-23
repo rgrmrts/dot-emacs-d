@@ -31,6 +31,7 @@
 ;;; Code:
 
 (require 'projectile)
+(require 'ivy)
 
 ;; set mac command and option keys
 (setq mac-command-modifier 'meta)
@@ -48,6 +49,9 @@
 (global-set-key (kbd "C-=") 'undo-redo)
 (global-set-key (kbd "C-s") 'swiper)
 (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+(define-key ivy-minibuffer-map (kbd "C-l") 'counsel-up-directory)
+(define-key ivy-minibuffer-map (kbd "C-j") 'ivy-alt-done)
+
 
 ;; replace the the eshell history to use counsel, would prefer to do this with
 ;; with define-key instead of using a hook, but eshell-hist-mode-hook is not
