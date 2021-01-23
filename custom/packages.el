@@ -54,6 +54,7 @@
     counsel-projectile
     doom-modeline
     doom-themes
+    exec-path-from-shell
     flycheck
     flycheck-inline
     ivy
@@ -75,6 +76,10 @@
 ;; runs every time we restart Emacs (which shouldn't be an issue if running
 ;; on boot and using emacsclient)
 (ensure-all-packages-are-installed packages)
+
+;; configure shell after installing exec-path-from-shell
+(when (memq window-system '(mac ns x))
+  (exec-path-from-shell-initialize))
 
 (provide 'packages)
 ;;; packages.el ends here

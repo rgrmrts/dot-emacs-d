@@ -53,13 +53,17 @@
       scroll-conservatively 100000
       scroll-preserve-screen-position 1)
 
-;; set theme to doom-solarized-light
+;; emacs theme for overall look and feel
 (load-theme 'doom-flatwhite t)
 
 ;; use doom modeline this requires all-the-icons, which is installed under packages.el,
 ;; but it's still required to run (all-the-icons-install-fonts)
 ;; TODO: auto-run (all-the-icons-install-fonts) in packages.el maybe?
 (doom-modeline-mode 1)
+
+;; use counsel and projectile modes for project switcing etc
+(counsel-mode)
+(counsel-projectile-mode)
 
 ;; use ivy as completion engine, and configure all ivy related stuff
 (ivy-mode 1)
@@ -69,10 +73,6 @@
 (setcdr (assq t ivy-format-functions-alist) #'ivy-format-function-line)
 (setq ivy-use-virtual-buffers t)
 (setq enable-recursive-minibuffers t)
-
-;; use counsel and projectile modes for project switcing etc
-(counsel-mode)
-(counsel-projectile-mode)
 
 ;; not sure what this is for, but has something to do with an error on macOS
 ;; TODO: document this better :)

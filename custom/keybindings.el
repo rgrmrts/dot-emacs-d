@@ -49,10 +49,13 @@
 (global-set-key (kbd "C-s") 'swiper)
 (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 
+;; replace the the eshell history to use counsel, would prefer to do this with
+;; with define-key instead of using a hook, but eshell-hist-mode-hook is not
+;; found.
+;; TODO: figure out how to do the above
 (add-hook 'eshell-hist-mode-hook
 	  (lambda ()
 	    (substitute-key-definition 'eshell-list-history 'counsel-esh-history eshell-hist-mode-map)))
-	    ;; (define-key eshell-mode-map (kbd "C-c C-l") 'counsel-esh-history)))
 
 (provide 'keybindings)
 ;;; keybindings.el ends here
