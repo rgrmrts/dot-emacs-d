@@ -46,7 +46,7 @@
   (package-refresh-contents))
 
 ;; this is the list of packages we're installing
-(defvar packages
+(defvar list-of-packages
   '(ag
     all-the-icons
     all-the-icons-ivy-rich
@@ -78,7 +78,7 @@
 
 ;; runs every time we restart Emacs (which shouldn't be an issue if running
 ;; on boot and using emacsclient)
-(ensure-all-packages-are-installed packages)
+(ensure-all-packages-are-installed list-of-packages)
 
 ;; configure shell after installing exec-path-from-shell
 ;; this can potentially be moved into a separate package
