@@ -35,6 +35,6 @@ $ ln -s ~/src/dot-emacs-d/init.el ~/.emacs.d/init.el
 
 ## License
 
-[MIT License](LICENSE)
+[MPL 2.0 License](LICENSE)
 
-Copyright (c) 2020 rgrmrts
+Copyright (c) 2021 rgrmrts
