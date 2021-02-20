@@ -34,6 +34,7 @@
     all-the-icons-ivy-rich
     counsel
     counsel-projectile
+    dockerfile-mode
     doom-modeline
     doom-themes
     exec-path-from-shell

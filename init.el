@@ -25,6 +25,12 @@
 (setq default-directory "~/src/")            ; use custom default directory
 (setq whitespace-line-column 100)            ; use 100 char lines as the norm
 
+;; store all backup and autosave files in the tmp dir
+(setq backup-directory-alist
+      `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+      `((".*" ,temporary-file-directory t)))
+
 ;; set the path where these configs live
 (add-to-list 'load-path "~/src/dot-emacs-d")
 (add-to-list 'load-path "~/src/dot-emacs-d/custom")
