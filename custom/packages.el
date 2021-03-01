@@ -38,7 +38,9 @@
     doom-modeline
     doom-themes
     exec-path-from-shell
+    geiser
     flycheck
+    flycheck-guile
     flycheck-inline
     ivy
     ivy-rich
@@ -51,6 +53,7 @@
     rust-mode
     swiper
     toml-mode
+    tuarego
     use-package))
 
 (defun ensure-all-packages-are-installed (list)

@@ -43,3 +43,16 @@
 
 (provide 'init)
 ;;; init.el ends here
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   '(tuareg flycheck-guile geiser which-key use-package toml-mode rust-mode python-mode popup nlinum-relative markdown-mode magit flycheck-inline exec-path-from-shell doom-themes doom-modeline dockerfile-mode counsel-projectile all-the-icons-ivy-rich ag)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
