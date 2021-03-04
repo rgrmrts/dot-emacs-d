@@ -26,10 +26,14 @@
 (setq whitespace-line-column 100)            ; use 100 char lines as the norm
 
 ;; store all backup and autosave files in the tmp dir
+(setq auto-save-visited-file-name t)
 (setq backup-directory-alist
       `((".*" . ,temporary-file-directory)))
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
+
+;; autosave lock files are annoying to deal with, especially with git
+;; (setq create-lockfiles nil)
 
 ;; set the path where these configs live
 (add-to-list 'load-path "~/src/dot-emacs-d")

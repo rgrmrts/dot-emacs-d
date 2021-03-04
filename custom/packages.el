@@ -53,7 +53,7 @@
     rust-mode
     swiper
     toml-mode
-    tuarego
+    tuareg
     use-package))
 
 (defun ensure-all-packages-are-installed (list)
