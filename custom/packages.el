@@ -32,6 +32,8 @@
   '(ag
     all-the-icons
     all-the-icons-ivy-rich
+    clojure-mode
+    cider
     counsel
     counsel-projectile
     dockerfile-mode
