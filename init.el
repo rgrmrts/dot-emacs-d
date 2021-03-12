@@ -33,7 +33,7 @@
       `((".*" ,temporary-file-directory t)))
 
 ;; autosave lock files are annoying to deal with, especially with git
-;; (setq create-lockfiles nil)
+(setq create-lockfiles nil)
 
 ;; set the path where these configs live
 (add-to-list 'load-path "~/src/dot-emacs-d")
