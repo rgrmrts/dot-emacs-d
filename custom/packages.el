@@ -56,7 +56,8 @@
     swiper
     toml-mode
     tuareg
-    use-package))
+    use-package
+    yaml-mode))
 
 (defun ensure-all-packages-are-installed (list)
   "Ensures all packages in LIST are installed."
