@@ -36,7 +36,7 @@
       scroll-preserve-screen-position 1)
 
 ;; emacs theme for overall look and feel
-(load-theme 'doom-one t)
+(load-theme 'doom-vibrant t)
 
 ;; use doom modeline this requires all-the-icons, which is installed under packages.el,
 ;; but it's still required to run (all-the-icons-install-fonts)
