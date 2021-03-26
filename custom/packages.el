@@ -46,6 +46,7 @@
     flycheck-inline
     ivy
     ivy-rich
+    lsp-mode
     magit
     markdown-mode
     nlinum
