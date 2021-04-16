@@ -44,6 +44,7 @@
     flycheck
     flycheck-guile
     flycheck-inline
+    flx
     ivy
     ivy-rich
     lsp-mode

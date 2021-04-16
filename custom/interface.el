@@ -55,6 +55,8 @@
 (setcdr (assq t ivy-format-functions-alist) #'ivy-format-function-line)
 (setq ivy-use-virtual-buffers t)
 (setq enable-recursive-minibuffers t)
+(setq ivy-re-builders-alist '((t . ivy--regex-fuzzy)))  ; fuzzy search in ivy buffers
+(setq ivy-initial-inputs-alist nil)  ; disable pre-populated input, like ^ in M-x
 
 ;; not sure what this is for, but has something to do with an error on macOS
 ;; TODO: document this better :)
