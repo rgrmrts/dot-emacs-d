@@ -14,5 +14,8 @@
 
 ;;; Code:
 
+;; config for ocaml with merlin
+(require 'opam-user-setup "~/src/dot-emacs-d/custom/opam-user-setup.el")
+
 (provide 'languages)
 ;;; languages.el ends here
