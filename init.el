@@ -31,6 +31,8 @@
       `((".*" . ,temporary-file-directory)))
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
+;; cleanup whitespace before saving
+(add-hook 'before-save-hook 'whitespace-cleanup)
 
 ;; autosave lock files are annoying to deal with, especially with git
 (setq create-lockfiles nil)
