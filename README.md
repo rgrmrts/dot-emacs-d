@@ -35,6 +35,8 @@ $ ln -s ~/src/dot-emacs-d/init.el ~/.emacs.d/init.el
 
 ## License
 
+<img alt="GitHub" src="https://img.shields.io/github/license/rgrmrts/dot-emacs-d">
+
 [MPL 2.0 License](LICENSE)
 
 Copyright (c) 2021 rgrmrts
