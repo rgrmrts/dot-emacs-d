@@ -30,7 +30,10 @@
 (scroll-bar-mode -1)               ; disable vertical scroll bar
 (blink-cursor-mode -1)             ; do not blink cursor at position
 
-;; better scrolling
+;; enable which-key to show available bindings
+(which-key-mode)
+
+;; Better scrolling
 (setq scroll-margin 0
       scroll-conservatively 100000
       scroll-preserve-screen-position 1)

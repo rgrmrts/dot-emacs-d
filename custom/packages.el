@@ -18,7 +18,7 @@
 
 ;; use melpa and elpa to install packages
 (setq package-archives '(("melpa" . "https://melpa.org/packages/")
-                         ("elpa" . "https://elpa.gnu.org/packages/")))
+			 ("elpa" . "https://elpa.gnu.org/packages/")))
 
 ;; initialize the internal record of packages
 (package-initialize)
@@ -59,6 +59,7 @@
     toml-mode
     tuareg
     use-package
+    which-key
     yaml-mode))
 
 (defun ensure-all-packages-are-installed (list)
