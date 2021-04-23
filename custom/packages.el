@@ -32,19 +32,20 @@
   '(ag
     all-the-icons
     all-the-icons-ivy-rich
-    clojure-mode
     cider
+    clojure-mode
     counsel
     counsel-projectile
     dockerfile-mode
     doom-modeline
     doom-themes
     exec-path-from-shell
-    geiser
+    flx
     flycheck
     flycheck-guile
     flycheck-inline
-    flx
+    flycheck-ocaml
+    geiser
     ivy
     ivy-rich
     lsp-mode
