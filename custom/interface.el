@@ -33,6 +33,9 @@
 ;; enable which-key to show available bindings
 (which-key-mode)
 
+;; winner-mode for better window management
+(winner-mode 1)
+
 ;; Better scrolling
 (setq scroll-margin 0
       scroll-conservatively 100000
