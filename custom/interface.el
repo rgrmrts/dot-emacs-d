@@ -61,9 +61,11 @@
 (setcdr (assq t ivy-format-functions-alist) #'ivy-format-function-line)
 (setq ivy-use-virtual-buffers t)
 (setq enable-recursive-minibuffers t)
-(setq ivy-re-builders-alist '((swiper . ivy--regex-plus)      ; regex-plus (default) in swiper
+;; configure the search type, use regex-plus for swiper and ag, fuzzy for everything else
+(setq ivy-re-builders-alist '((swiper . ivy--regex-plus)
 			      (counsel-ag . ivy--regex-plus)
-			      (t . ivy--regex-fuzzy)))        ; fuzzy search in all other ivy buffers
+			      (counsel-projectile-ag . ivy--regex-plus)
+			      (t . ivy--regex-fuzzy)))
 (setq ivy-initial-inputs-alist nil)  ; disable pre-populated input, like ^ in M-x
 
 ;; not sure what this is for, but has something to do with an error on macOS
