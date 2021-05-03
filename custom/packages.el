@@ -33,6 +33,7 @@
     all-the-icons
     all-the-icons-ivy-rich
     cider
+    clang-format-+
     clojure-mode
     counsel
     counsel-projectile
@@ -42,6 +43,7 @@
     exec-path-from-shell
     flx
     flycheck
+    flycheck-clang-analyzer
     flycheck-guile
     flycheck-inline
     flycheck-ocaml
