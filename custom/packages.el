@@ -33,13 +33,14 @@
     all-the-icons
     all-the-icons-ivy-rich
     cider
-    clang-format-+
+    clang-format+
     clojure-mode
     counsel
     counsel-projectile
     dockerfile-mode
     doom-modeline
     doom-themes
+    emojify
     exec-path-from-shell
     flx
     flycheck

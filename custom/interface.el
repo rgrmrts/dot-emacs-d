@@ -44,6 +44,9 @@
 ;; emacs theme for overall look and feel
 (load-theme 'doom-dracula t)
 
+;; display emojis
+(set-fontset-font t 'symbol "Apple Color Emoji")
+
 ;; use doom modeline this requires all-the-icons, which is installed under packages.el,
 ;; but it's still required to run (all-the-icons-install-fonts)
 ;; TODO: auto-run (all-the-icons-install-fonts) in packages.el maybe?
@@ -62,10 +65,8 @@
 (setq ivy-use-virtual-buffers t)
 (setq enable-recursive-minibuffers t)
 ;; configure the search type, use regex-plus for swiper and ag, fuzzy for everything else
-(setq ivy-re-builders-alist '((swiper . ivy--regex-plus)
-			      (counsel-ag . ivy--regex-plus)
-			      (counsel-projectile-ag . ivy--regex-plus)
-			      (t . ivy--regex-fuzzy)))
+(setq ivy-re-builders-alist '((counsel-M-x . ivy--regex-fuzzy)
+			      (t . ivy--regex-plus)))
 (setq ivy-initial-inputs-alist nil)  ; disable pre-populated input, like ^ in M-x
 
 ;; not sure what this is for, but has something to do with an error on macOS
