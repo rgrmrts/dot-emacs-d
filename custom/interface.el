@@ -60,7 +60,8 @@
 ;; enable company completion and configure
 (global-company-mode)
 (setq company-show-numbers t)
-(setq company-idle-delay 0)
+(setq company-idle-delay 0.1)
+(setq company-minimum-prefix-length 2)
 
 ;; configure flycheck
 (global-flycheck-inline-mode)
