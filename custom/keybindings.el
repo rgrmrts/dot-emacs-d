@@ -14,6 +14,7 @@
 
 (require 'projectile)
 (require 'ivy)
+(require 'company)
 
 ;; set mac command and option keys
 (setq mac-command-modifier 'meta)
@@ -33,6 +34,20 @@
 (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 (define-key ivy-minibuffer-map (kbd "C-l") 'counsel-up-directory)
 (define-key ivy-minibuffer-map (kbd "C-j") 'ivy-alt-done)
+
+;; company keybindings
+(global-set-key (kbd "<tab>") #'company-indent-or-complete-common)
+(define-key company-active-map (kbd "C-n") 'company-select-next)
+(define-key company-active-map (kbd "C-p") 'company-select-previous)
+(define-key company-active-map (kbd "C-j") 'company-complete-selection)
+(define-key company-active-map (kbd "C-p") 'company-select-previous)
+(add-hook 'eshell-mode-hook
+	  (lambda ()
+	    (define-key
+	      eshell-mode-map
+	      (kbd "<tab>")
+	      #'company-indent-or-complete-common)))
+
 
 ;; replace the the eshell history to use counsel, would prefer to do this with
 ;; with define-key instead of using a hook, but eshell-hist-mode-hook is not

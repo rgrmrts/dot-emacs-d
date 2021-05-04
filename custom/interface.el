@@ -18,6 +18,7 @@
 (require 'ivy-rich)
 (require 'all-the-icons-ivy-rich)
 (require 'counsel-projectile)
+(require 'flycheck)
 
 ;; set font to use with Emacs
 (set-frame-font "JetBrains Mono 13" nil t)
@@ -55,6 +56,17 @@
 ;; use counsel and projectile modes for project switcing etc
 (counsel-mode)
 (counsel-projectile-mode)
+
+;; enable company completion and configure
+(global-company-mode)
+(setq company-show-numbers t)
+(setq company-idle-delay 0)
+
+;; configure flycheck
+(global-flycheck-inline-mode)
+(setq flycheck-idle-change-delay 0.3)
+(setq flycheck-check-syntax-automatically '(save mode-enable))
+(add-hook 'after-init-hook #'global-flycheck-mode)
 
 ;; use ivy as completion engine, and configure all ivy related stuff
 (ivy-mode 1)
