@@ -62,6 +62,7 @@
 (setq company-show-numbers t)
 (setq company-idle-delay 0.1)
 (setq company-minimum-prefix-length 2)
+(setq company-tooltip-minimum-width 50)
 
 ;; configure flycheck
 (global-flycheck-inline-mode)
