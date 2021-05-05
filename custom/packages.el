@@ -37,6 +37,7 @@
     clojure-mode
     counsel
     counsel-projectile
+    diff-hl
     dockerfile-mode
     doom-modeline
     doom-themes
@@ -54,8 +55,10 @@
     lsp-mode
     magit
     markdown-mode
+    nhexl-mode
     nlinum
     nlinum-relative
+    package-lint
     projectile
     python-mode
     rust-mode

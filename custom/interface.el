@@ -37,6 +37,11 @@
 ;; winner-mode for better window management
 (winner-mode 1)
 
+;; enable diff-hl globally, and add hooks for magit
+(global-diff-hl-mode)
+(add-hook 'magit-pre-refresh-hook 'diff-hl-magit-pre-refresh)
+(add-hook 'magit-post-refresh-hook 'diff-hl-magit-post-refresh)
+
 ;; Better scrolling
 (setq scroll-margin 0
       scroll-conservatively 100000
@@ -73,6 +78,7 @@
 ;; use ivy as completion engine, and configure all ivy related stuff
 (ivy-mode 1)
 (setq ivy-height 17)
+(ivy-configure 'counsel-yank-pop :height ivy-height)
 (all-the-icons-ivy-rich-mode 1)
 (ivy-rich-mode 1)
 (setcdr (assq t ivy-format-functions-alist) #'ivy-format-function-line)
