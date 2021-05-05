@@ -35,6 +35,7 @@
     cider
     clang-format+
     clojure-mode
+    company
     counsel
     counsel-projectile
     diff-hl
@@ -55,6 +56,8 @@
     lsp-mode
     magit
     markdown-mode
+    merlin
+    merlin-company
     nhexl-mode
     nlinum
     nlinum-relative
