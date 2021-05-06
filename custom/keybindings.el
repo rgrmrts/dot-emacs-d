@@ -41,13 +41,6 @@
 (define-key company-active-map (kbd "C-p") 'company-select-previous)
 (define-key company-active-map (kbd "C-j") 'company-complete-selection)
 (define-key company-active-map (kbd "C-p") 'company-select-previous)
-(add-hook 'eshell-mode-hook
-	  (lambda ()
-	    (define-key
-	      eshell-mode-map
-	      (kbd "<tab>")
-	      #'company-indent-or-complete-common)))
-
 
 ;; replace the the eshell history to use counsel, would prefer to do this with
 ;; with define-key instead of using a hook, but eshell-hist-mode-hook is not
