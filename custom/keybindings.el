@@ -42,6 +42,9 @@
 (define-key company-active-map (kbd "C-j") 'company-complete-selection)
 (define-key company-active-map (kbd "C-p") 'company-select-previous)
 
+;; mapping for eshell-toggle
+(global-set-key (kbd "M-S") 'eshell-toggle)
+
 ;; replace the the eshell history to use counsel, would prefer to do this with
 ;; with define-key instead of using a hook, but eshell-hist-mode-hook is not
 ;; found.

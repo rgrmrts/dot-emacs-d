@@ -43,6 +43,7 @@
     doom-modeline
     doom-themes
     emojify
+    eshell-toggle
     exec-path-from-shell
     flx
     flycheck
