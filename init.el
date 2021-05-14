@@ -16,7 +16,7 @@
 ;;; Code:
 
 ;; hack to allow GUI emacs app to find libgccjit for native compilation
-(setenv "LIBRARY_PATH" "/usr/local/opt/gcc/lib/gcc/10:/usr/local/opt/libgccjit/lib/gcc/10:/usr/local/opt/gcc/lib/gcc/10/gcc/x86_64-apple-darwin20/10.2.0")
+(setenv "LIBRARY_PATH" "/usr/local/opt/gcc/lib/gcc/11:/usr/local/opt/libgccjit/lib/gcc/:/usr/local/opt/gcc/lib/gcc/11/gcc/x86_64-apple-darwin20/11.1.0")
 
 ;; some top level config for emacs
 (setq comp-speed 3)                          ; native compilation optimization level

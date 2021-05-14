@@ -31,6 +31,10 @@
 (scroll-bar-mode -1)               ; disable vertical scroll bar
 (blink-cursor-mode -1)             ; do not blink cursor at position
 
+;; tab behavior
+(setq-default tab-width 4)
+(setq-default indent-tabs-mode nil)
+
 ;; enable which-key to show available bindings
 (which-key-mode)
 
@@ -48,7 +52,7 @@
       scroll-preserve-screen-position 1)
 
 ;; emacs theme for overall look and feel
-(load-theme 'doom-dracula t)
+(load-theme 'doom-plain t)
 
 ;; display emojis
 (set-fontset-font t 'symbol "Apple Color Emoji")
@@ -86,7 +90,7 @@
 (setq enable-recursive-minibuffers t)
 ;; configure the search type, use regex-plus for swiper and ag, fuzzy for everything else
 (setq ivy-re-builders-alist '((counsel-M-x . ivy--regex-fuzzy)
-			      (t . ivy--regex-plus)))
+                  (t . ivy--regex-plus)))
 (setq ivy-initial-inputs-alist nil)  ; disable pre-populated input, like ^ in M-x
 
 ;; not sure what this is for, but has something to do with an error on macOS
