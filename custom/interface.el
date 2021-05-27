@@ -52,7 +52,7 @@
       scroll-preserve-screen-position 1)
 
 ;; emacs theme for overall look and feel
-(load-theme 'doom-plain t)
+(load-theme 'doom-dracula t)
 
 ;; display emojis
 (set-fontset-font t 'symbol "Apple Color Emoji")

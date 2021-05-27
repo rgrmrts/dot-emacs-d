@@ -19,8 +19,8 @@
 (setenv "LIBRARY_PATH" "/usr/local/opt/gcc/lib/gcc/11:/usr/local/opt/libgccjit/lib/gcc/:/usr/local/opt/gcc/lib/gcc/11/gcc/x86_64-apple-darwin20/11.1.0")
 
 ;; some top level config for emacs
-(setq comp-speed 3)                          ; native compilation optimization level
-(setq gc-cons-threshold 50000000)            ; garbage collection frequency, every 50mb
+(setq comp-speed 2)                          ; native compilation optimization level
+(setq gc-cons-threshold 250000000)           ; garbage collection frequency, every 50mb
 (setq large-file-warning-threshold 1000000)  ; warn when opening big files
 (setq default-directory "~/src/")            ; use custom default directory
 (setq whitespace-line-column 100)            ; use 100 char lines as the norm
