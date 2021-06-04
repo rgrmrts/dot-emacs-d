@@ -90,7 +90,7 @@
 (setq enable-recursive-minibuffers t)
 ;; configure the search type, use regex-plus for swiper and ag, fuzzy for everything else
 (setq ivy-re-builders-alist '((counsel-M-x . ivy--regex-fuzzy)
-                  (t . ivy--regex-plus)))
+                              (t . ivy--regex-plus)))
 (setq ivy-initial-inputs-alist nil)  ; disable pre-populated input, like ^ in M-x
 
 ;; not sure what this is for, but has something to do with an error on macOS
