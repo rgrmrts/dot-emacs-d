@@ -31,6 +31,9 @@
 (scroll-bar-mode -1)               ; disable vertical scroll bar
 (blink-cursor-mode -1)             ; do not blink cursor at position
 
+;; display column numbers in modeline
+(setq column-number-mode t)
+
 ;; tab behavior
 (setq-default tab-width 4)
 (setq-default indent-tabs-mode nil)
@@ -52,7 +55,7 @@
       scroll-preserve-screen-position 1)
 
 ;; emacs theme for overall look and feel
-(load-theme 'doom-dracula t)
+(load-theme 'doom-one-light t)
 
 ;; display emojis
 (set-fontset-font t 'symbol "Apple Color Emoji")
