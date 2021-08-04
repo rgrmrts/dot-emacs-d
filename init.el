@@ -16,7 +16,7 @@
 ;;; Code:
 
 ;; hack to allow GUI emacs app to find libgccjit for native compilation
-(setenv "LIBRARY_PATH" "/usr/local/opt/gcc/lib/gcc/11:/usr/local/opt/libgccjit/lib/gcc/:/usr/local/opt/gcc/lib/gcc/11/gcc/x86_64-apple-darwin20/11.1.0")
+(setenv "LIBRARY_PATH" "/usr/local/opt/gcc/lib/gcc/11:/usr/local/opt/libgccjit/lib/gcc/:/usr/local/opt/gcc/lib/gcc/11/gcc/x86_64-apple-darwin20/11.2.0")
 
 ;; some top level config for emacs
 (setq comp-speed 2)                          ; native compilation optimization level
@@ -46,6 +46,10 @@
 (require 'keybindings)
 (require 'interface)
 (require 'languages)
+
+;; tweaks to make tramp faster
+(defadvice projectile-project-root (around ignore-remote first activate)
+  (unless (file-remote-p default-directory) ad-do-it))
 
 (provide 'init)
 ;;; init.el ends here
