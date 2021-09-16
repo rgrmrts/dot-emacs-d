@@ -18,7 +18,7 @@
 
 ;; use melpa and elpa to install packages
 (setq package-archives '(("melpa" . "https://melpa.org/packages/")
-			 ("elpa" . "https://elpa.gnu.org/packages/")))
+                         ("elpa" . "https://elpa.gnu.org/packages/")))
 
 ;; initialize the internal record of packages
 (package-initialize)
@@ -52,6 +52,7 @@
     flycheck-inline
     flycheck-ocaml
     geiser
+    github-theme
     ivy
     ivy-rich
     lsp-mode
