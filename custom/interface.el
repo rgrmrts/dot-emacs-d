@@ -21,7 +21,7 @@
 (require 'flycheck)
 
 ;; set font to use with Emacs
-(set-frame-font "Fira Code 13" nil t)
+(set-frame-font "Fira Code 14" nil t)
 
 ;; enable font ligatures for Fira Code, see the following:
 ;; https://github.com/tonsky/FiraCode/wiki/Emacs-instructions#using-composition-char-table
